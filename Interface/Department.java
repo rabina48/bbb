@@ -55,10 +55,10 @@ public class Department {
 
 
 
-//            class Department1 implements Bank {
-//
-//                public void getLoan() {
-//                    System.out.println("We are providing 10% interest for Loan above 1Lakh");
-//
-//                }
+           class Department1 implements Bank {
+
+               public void getLoan() {
+                   System.out.println("We are providing 10% interest for Loan above 1Lakh");
+
+              }
 }
