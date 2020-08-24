@@ -2,7 +2,10 @@ package Interface;
 
     interface BankShow {
 
-        void display();
+        void displayAccept();
+        void displayReject();
+
+
 
 
     }

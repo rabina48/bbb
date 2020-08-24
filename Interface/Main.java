@@ -1,11 +1,12 @@
 package Interface;
 
-public class Main {
-
+public class Main  {
+double number, checkNo;
     public  static  void main(String[] args) {
         Department department = new Department();
-        department.getInput().equals();
-        department.getLoan();
+        department.getInput();
+        NextInfomation input = department.addInfo();
+        department.addInfo();
 
 
 
