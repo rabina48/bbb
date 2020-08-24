@@ -6,11 +6,12 @@ public class Department {
         String firstName;
         String lastName;
         String address;
-        double  number;
+        double  number, checkNo;
         String loan;
 
 
-        public String getInput() {
+
+    public String getInput() {
             System.out.println("Please add your Information if you want to get loan:");
             Scanner information = new Scanner(System.in);
 
@@ -26,6 +27,12 @@ public class Department {
             System.out.println("Is your loan less than $100000?");
             loan = information.nextLine();
 
+            number = information.nextLong();
+
+            return  loan;
+        }
+
+        String getLoan(){
             if (loan.equals( "yes" )){
                 System.out.println("you can take loan please provide your details  contact no:");
             } else if(loan.equals("no")){
@@ -36,31 +43,14 @@ public class Department {
             }
             return  loan;
         }
-//            switch (amount) {
-//                case "Yes":
-//                    System.out.println("you can take loan please provide your details  contact no:");
-//                    break;
-//
-//                case "No":
-//                    System.out.println("We can only provide loan less then $100000 at the moment!");
-//                    break;
-//
-//                default:
-//                    System.out.println("Invalid! Please type Y= yes  & N = No");
-//                    break;
-//
-//            }
 
 
-
-
-
-        public double addInfo() {
-            System.out.println("you can take loan please provide your details  contact no:");
-            Scanner phone = new Scanner(System.in);
-            number = phone.nextLong();
-
-            return number;
+        public NextInfomation addInfo() {
+            Scanner nextinfo = new Scanner(System.in);
+            number = nextinfo.nextLong();
+            checkNo = nextinfo.nextLong();
+           NextInfomation in = new NextInfomation(number, checkNo);
+            return in;
         }
 
 
