@@ -3,62 +3,77 @@ package Interface;
 import java.util.Scanner;
 
 public class Department {
-        String firstName;
-        String lastName;
-        String address;
-        double  number, checkNo;
-        String loan;
+    String firstName;
+    String lastName;
+    String address;
+    double number, checkNo;
+    String loan;
 
 
+    public ProcessInformation getInput() {
+        System.out.println("Please add your Information if you want to get loan:");
+        Scanner information = new Scanner(System.in);
 
-    public String getInput() {
-            System.out.println("Please add your Information if you want to get loan:");
-            Scanner information = new Scanner(System.in);
+        System.out.println("Enter your first name:");
+        firstName = information.nextLine();
 
-            System.out.println("Enter your first name:");
-            firstName = information.nextLine();
+        System.out.println("Enter your last name:");
+        lastName = information.nextLine();
 
-            System.out.println("Enter your last name:");
-            lastName = information.nextLine();
+        System.out.println("Enter your current Address:");
+        address = information.nextLine();
 
-            System.out.println("Enter your current Address:");
-            address = information.nextLine();
+        System.out.println("Is your loan less than $100000? (Enter: 'yes' OR  'no')");
+        loan = information.nextLine();
 
-            System.out.println("Is your loan less than $100000?");
-            loan = information.nextLine();
+       // number = information.nextLong();
+        ProcessInformation in = new ProcessInformation(loan);
 
-            number = information.nextLong();
 
-            return  loan;
-        }
+        return in;
+    }
+    public void getLoan(){
 
-        String getLoan(){
-            if (loan.equals( "yes" )){
+        switch (loan){
+            case "yes":
                 System.out.println("you can take loan please provide your details  contact no:");
-            } else if(loan.equals("no")){
+                addInfo();
+                break;
+
+            case "no":
                 System.out.println("We can only provide loan less then $100000 at the moment!");
-
-            }else{
+                break;
+            default:
                 System.out.println("Invalid! Please type Y= yes  & N = No");
-            }
-            return  loan;
+
+
         }
+    }
+
+//    double getLoan(String loan) {
+//        if (loan.equals("yes")) {
+//            System.out.println("you can take loan please provide your details  contact no:");
+//            return addInfo();
+//
+//        } else if (loan.equals("no")) {
+//            System.out.println("We can only provide loan less then $100000 at the moment!");
+//
+//        } else {
+//            System.out.println("Invalid! Please type Y= yes  & N = No");
+//        }
+//        return 0;   //no data
+//    }
+
+    public void addInfo() {
+        Scanner nextinfo = new Scanner(System.in);
+        System.out.println("Please Enter your Number: ");
+        number = nextinfo.nextLong();
+        System.out.println("Please Enter your checkNO: ");
+        checkNo = nextinfo.nextLong();
+       // return addInfo();
+
+    }
 
 
-        public NextInfomation addInfo() {
-            Scanner nextinfo = new Scanner(System.in);
-            number = nextinfo.nextLong();
-            checkNo = nextinfo.nextLong();
-           NextInfomation in = new NextInfomation(number, checkNo);
-            return in;
-        }
 
-
-
-           class Department1 implements Bank {
-
-               public void getLoan() {
-                   System.out.println("We are providing 10% interest for Loan above 1Lakh");
-
-              }
 }
