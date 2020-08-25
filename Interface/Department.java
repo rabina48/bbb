@@ -54,8 +54,8 @@ public class Department {
             case "no":
                 System.out.println("We can only provide loan less then $100000 at the moment!");
 
-                DisplayResult displayResult1 = new DisplayResult();
-                displayResult1.displayReject();
+//                DisplayResult displayResult1 = new DisplayResult();
+//                displayResult1.displayReject();
                 break;
             default:
                 System.out.println("Invalid! Please type Y= yes  & N = No");
