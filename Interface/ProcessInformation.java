@@ -7,6 +7,6 @@ public class ProcessInformation {
 
     }
 
-    public ProcessInformation(Result details) {
+    public ProcessInformation(DisplayResult details) {
     }
 }

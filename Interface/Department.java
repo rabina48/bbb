@@ -10,12 +10,13 @@ public class Department {
     String address;
     double number, checkNo;
     String loan;
-//    private Display display;
-//
-//    public Department(DisplayResult message) {
-//        this.display = (Display) message;
-//
-//    }
+
+    private DisplayResult displayResult;
+
+    public Department(DisplayResult displayResult) {
+        this.displayResult = displayResult;
+
+    }
 
 
 
@@ -81,7 +82,7 @@ public class Department {
         Scanner nextinfo = new Scanner(System.in);
         System.out.println("Please Enter your Number: ");
         number = nextinfo.nextLong();
-        
+
 
 
         System.out.println("Please Enter your checkNO: ");
@@ -93,6 +94,9 @@ public class Department {
        // return addInfo();
 
     }
+
+
+
 
 
 
