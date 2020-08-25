@@ -10,12 +10,14 @@ public class Department {
     String address;
     double number, checkNo;
     String loan;
-    private Display display;
-    
-    public Department(DisplayResult message) {
-        this.display = (Display) message;
+//    private Display display;
+//
+//    public Department(DisplayResult message) {
+//        this.display = (Display) message;
+//
+//    }
 
-    }
+
 
 
     public ProcessInformation getInput() {
@@ -46,6 +48,8 @@ public class Department {
             case "yes":
                 System.out.println("you can take loan please provide your details  contact no:");
                 addInfo();
+                DisplayResult displayResult = new DisplayResult();
+                displayResult.displayAccept();
                 break;
 
             case "no":
