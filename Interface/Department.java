@@ -48,12 +48,13 @@ public class Department {
             case "yes":
                 System.out.println("you can take loan please provide your details  contact no:");
                 addInfo();
-                DisplayResult displayResult = new DisplayResult();
-                displayResult.displayAccept();
                 break;
 
             case "no":
                 System.out.println("We can only provide loan less then $100000 at the moment!");
+
+                DisplayResult displayResult1 = new DisplayResult();
+                displayResult1.displayReject();
                 break;
             default:
                 System.out.println("Invalid! Please type Y= yes  & N = No");
@@ -80,10 +81,14 @@ public class Department {
         Scanner nextinfo = new Scanner(System.in);
         System.out.println("Please Enter your Number: ");
         number = nextinfo.nextLong();
+        
 
 
         System.out.println("Please Enter your checkNO: ");
         checkNo = nextinfo.nextLong();
+
+        DisplayResult displayResult = new DisplayResult();
+        displayResult.displayAccept();
 
        // return addInfo();
 
