@@ -1,5 +1,7 @@
 package Interface;
 
+import calculatorr.using.function.Display;
+
 import java.util.Scanner;
 
 public class Department {
@@ -8,6 +10,12 @@ public class Department {
     String address;
     double number, checkNo;
     String loan;
+    private Display display;
+    
+    public Department(DisplayResult message) {
+        this.display = (Display) message;
+
+    }
 
 
     public ProcessInformation getInput() {
@@ -68,11 +76,16 @@ public class Department {
         Scanner nextinfo = new Scanner(System.in);
         System.out.println("Please Enter your Number: ");
         number = nextinfo.nextLong();
+
+
         System.out.println("Please Enter your checkNO: ");
         checkNo = nextinfo.nextLong();
+
        // return addInfo();
 
     }
+
+
 
 
 
