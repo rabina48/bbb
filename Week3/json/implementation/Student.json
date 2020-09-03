@@ -1,0 +1,62 @@
+
+{"id" : 121,
+  "name": "Sabina",
+  "libraryActive": true,
+  "gender": "Female",
+  "age": 30,
+  "email" : "sabina@gmail.com",
+  "phone" : "+977253682",
+  "address":["Bhaktapur","Kathmandu"],
+  "borrowBook": true,
+  "fineOnBook": false,
+  "bookName":
+          [
+            {
+              "bookId": "0202fd",
+              "bookname" : "Java",
+              "bookAuthor": "RPGumdi"
+            },
+            {
+              "bookId": "020582fd",
+              "bookname" : "Python",
+              "bookAuthor": "RPGumdilo"
+            }
+          ],
+  "department": "COmputer"
+},{
+          "id" : 1241,
+          "name": "Rabina",
+          "libraryActive": true,
+          "gender": "Female",
+          "age": 30,
+          "email" : "rabina@gmail.com",
+          "phone" : "+9772543682",
+          "address":["Bhaktapur","Kathmandu"],
+          "borrowBook": false,
+          "fineOnBook": false,
+          "bookName":
+
+          },
+{
+          "firstName": "John",
+          "lastName": "Shrestha",
+          "age": 50,
+          "address": {
+          "Address": "Jhapa",
+          "city": "Damak",
+          "Provinces": "1",
+          "postalCode": 105021
+},
+            "phoneNumbers": [
+                {
+                "type": "home",
+                "number": "255263582525"
+                },
+                  {
+                  "type": "fax",
+                  "number": "646 555-4567"
+                  }
+            ]
+
+
+},
