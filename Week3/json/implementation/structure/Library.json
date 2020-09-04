@@ -1,0 +1,28 @@
+
+
+
+{"id" : 121,
+  "name": "Sabina",
+  "libraryActive": true,
+  "gender": "Female",
+  "age": 30,
+  "email" : "sabina@gmail.com",
+  "phone" : "+977253682",
+  "address":["Bhaktapur","Kathmandu"],
+  "borrowBook": true,
+  "fineOnBook": false,
+  "bookName":
+  [
+    {
+      "bookId": "0202fd",
+      "bookname" : "Java",
+      "bookAuthor": "RPGumdi"
+    },
+    {
+      "bookId": "020582fd",
+      "bookname" : "Python",
+      "bookAuthor": "RPGumdilo"
+    }
+  ],
+  "department": "COmputer"
+}
