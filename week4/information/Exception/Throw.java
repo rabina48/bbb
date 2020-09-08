@@ -15,10 +15,13 @@ public class Throw {
 
         try {
             if (studentage <18 && studentweight <45) {
-                throw new ArithmeticException("Student is not eligible for Vote");
+                throw new Exception();//throw new Nullpointer
+
 
             } else {
                 System.out.println("Student Entry is Valid!!");
+                System.out.println("Welcome to the Registration process!!");
+                System.out.println("Have a nice day..");
 
             }
         } catch (Exception e) {
@@ -27,9 +30,7 @@ public class Throw {
     }
         public static void main (String[] args){
             checkEligibilty();
-            System.out.println("Welcome to the Registration process!!");
 
-            System.out.println("Have a nice day..");
 
         }
     }
